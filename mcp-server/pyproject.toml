@@ -1,0 +1,13 @@
+[project]
+name = "custom-server"
+version = "0.1.0"
+description = "Example custom MCP server on Databricks Apps"
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi>=0.115.12",
+    "mcp[cli]>=1.10.0",
+    "uvicorn>=0.34.2",
+]
+
+[project.scripts]
+custom-server = "custom_server.main:main"

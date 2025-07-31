@@ -2,8 +2,6 @@
 This repo includes the files needed to run a demo of MCP on Databricks.
 
 ## Folder structure
-* The `mcp-server-app` folder contains the code relevant to deploy the server as a Databricks Apps. The best practice used is from [this repo](https://marketplace.databricks.com/details/e109cf23-ee53-46ce-92d7-8a562138c62c/Databricks_Custom-MCP-Server-Template), under the `custom server` folder.
+* The `mcp-server` folder contains the code relevant to deploy the server as a Databricks Apps. This was created starting from [this repo](https://github.com/databrickslabs/mcp/tree/master/examples/custom-server). The App should be deployed as custom app and then providing the folder path.
 
-* The `tests` folder contains the mcp tools that have been tested as python functions.
-
-* The
+* The `tools-local-tests` folder contains the mcp tools that have been tested locally as python functions.
