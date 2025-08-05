@@ -18,8 +18,8 @@ register_finance_tools(mcp)
 
 
 # Add boilerplate tools
-from custom_server.boilerplate_tools import register_boilerplate_tools
-register_boilerplate_tools(mcp)
+# from custom_server.boilerplate_tools import register_boilerplate_tools
+# register_boilerplate_tools(mcp)
 
 #####################################################################################################################
 ### WEBAPP Config
