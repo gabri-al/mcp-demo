@@ -1,14 +1,13 @@
 # Creating MCP on Databricks
 This repo includes the files needed to run a demo of a custom MCP-server on Databricks.
+No API keys are actually required (the local env is just a placeholder).
 
 ## Folder structure
 * The `mcp-server` folder contains the code relevant to deploy the server as a Databricks Apps. This was created starting from [this repo](https://github.com/databrickslabs/mcp/tree/master/examples/custom-server). The App should be deployed as custom app and then deploying it providing this folder path.
 
-* No API keys are actually required (the local env is just a placeholder)
-
 * The `tools-local-tests` folder contains the mcp tools that have been tested locally as python functions.
 
-* Demo scripts:
+## Demo script:
 - From Playground test any model with questions like: "What is today's Nvidia stock price?"
 - Then, assign the MCP Server and ask: "Tell me what tools you have available now?"
 - Next, compare another model without MCP server access and ask: "What is today's Nvidia stock price?"
