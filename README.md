@@ -1,9 +1,11 @@
-# Creating a custom MCP server on Databricks hosted on Databricks Apps
-This repo includes the files needed to run a demo of a custom MCP-server and related agent on Databricks.
-No API keys are actually required (the local env is just a placeholder).
+# Demo - Creating a custom MCP server on Databricks, hosted on Databricks Apps
+This repo includes a demo of a custom MCP-server and related agent, hosted on Databricks.
+
+The agent uses tools from the [financial dataset mcp](https://www.financialdatasets.ai/), therefore, a valid API key is required.
 
 ## Folder structure
-* The `mcp-server` folder contains the code relevant to deploy the server as a Databricks Apps. This was created starting from [this repo](https://github.com/databrickslabs/mcp/tree/master/examples/custom-server). The App should be created as **custom app** and then **deployed providing this folder path**.
+* The `mcp-server` folder contains the code relevant to deploy the server as a Databricks Apps. This was created starting from [this repo](https://github.com/databrickslabs/mcp/tree/master/examples/custom-server) and following requiremens and docs [here](https://docs.databricks.com/aws/en/generative-ai/mcp/custom-mcp).
+The App should be created as **custom app** and then **deployed providing this folder path**; the app's name should start with `mcp-`.
 
 * The `tools-local-tests` folder contains the mcp tools that have been tested locally as python functions.
 
