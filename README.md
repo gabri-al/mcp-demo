@@ -15,6 +15,8 @@ The App should be created as **custom app** and then **deployed providing this f
   3. Create / Update a secret scope with Service Principal Info (this is done in Notebook 00_ within this folder, using a .env file there)
   4. Review the langgraph notebook to adjust all the TODO; note that cell 4 is creating an agent.py file locally using the variables defined in cell 9
 
+* `(old) financial-dataset-mcp` folder contains a deprecated version of the financial dataset mcp.
+
 ## Demo script:
 
 ### Playground --> select LLM + Custom MCP or Custom Agent
