@@ -99,3 +99,27 @@ def register_finance_tools(mcp):
 
         # Stringify the prices
         return json.dumps(prices, indent=2)
+    
+    # Tool to retreive news for a company
+    @mcp.tool()
+    async def get_company_news(ticker: str) -> str:
+        """Get news for a company.
+
+        Args:
+            ticker: Ticker symbol of the company (e.g. AAPL, GOOGL)
+        """
+        # Fetch data from the API
+        url = f"{FINANCIAL_DATASETS_API_BASE}/news/?ticker={ticker}"
+        data = await make_request(url)
+
+        # Check if data is found
+        if not data:
+            return "Unable to fetch news or no news found."
+
+        # Extract the news
+        news = data.get("news", [])
+
+        # Check if news are found
+        if not news:
+            return "Unable to fetch news or no news found."
+        return json.dumps(news, indent=2)

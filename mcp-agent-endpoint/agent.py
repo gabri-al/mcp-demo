@@ -88,7 +88,7 @@ MANAGED_MCP_SERVER_URLS = [ # We need this as empty list
 #
 import os
 workspace_client = WorkspaceClient(
-    host="https://e2-demo-field-eng.cloud.databricks.com/",
+    host="https://fevm-stable-classic-gabriele-demos.cloud.databricks.com/",
     client_id=os.getenv("DATABRICKS_CLIENT_ID"),
     client_secret=os.getenv("DATABRICKS_CLIENT_SECRET"),
     auth_type="oauth-m2m",  # Enables service principal authentication
@@ -97,7 +97,7 @@ workspace_client = WorkspaceClient(
 # Custom MCP Servers — add URLs below (not managed or proxied by Databricks)
 CUSTOM_MCP_SERVER_URLS = [
     # Example: "https://<custom-mcp-app-url>/mcp"
-    "https://mcp-gab-finance-1444828305810485.aws.databricksapps.com/mcp"
+    "https://mcp-financialdata-7474657694920238.aws.databricksapps.com/mcp"
 ]
 
 
